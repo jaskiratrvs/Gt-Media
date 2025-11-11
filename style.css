@@ -1,0 +1,201 @@
+@font-face {
+    font-family: "AeonikPro Reg";
+    src: url("/fonts/AeonikPro-R.otf");
+    font-weight: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "AeonikPro Reg";
+}
+
+.container-r {
+    max-width: 1360px;
+    padding: 0px 20px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.dark-bg {
+    background: linear-gradient(180deg, #0D0D0D 0%, #1B1B1B 31.4%);
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* Navbar background on scroll */
+.navbar-scrolled {
+    background-color: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(8px);
+}
+
+h1 {
+    font-size: 88px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90px;
+    letter-spacing: -2px;
+}
+
+p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.home-hero p {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px;
+}
+
+h3 {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+h2 {
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+h3{
+   font-size: 40px;
+font-style: normal;
+font-weight: 400;
+line-height: normal; 
+}
+h5 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.btn-red {
+    border-radius: 8px;
+    background: #C7323B;
+    border: 1px solid transparent;
+    padding: 11px 22px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    transition: all 0.4s ease-in-out;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px
+}
+
+.btn-red:hover svg path {
+    transition: all 0.4s ease-in-out;
+}
+
+.btn-red:hover svg path {
+    stroke: #c7323b;
+}
+
+.btn-red:hover {
+    border: 1px solid #C7323B;
+    background-color: #fff;
+    color: #C7323B;
+}
+
+label {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #353535;
+}
+
+.header-menu .desk a {
+    font-size: 18px;
+    font-style: normal;
+    line-height: normal;
+    color: #fff;
+    position: relative;
+}
+.header-menu .desk a:after{
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0px;
+    width: 100%;
+    height: 1px;
+    transform: scaleX(0);
+    transform-origin: right center;
+    will-change: transform;
+    opacity: 0.9;
+    background: rgb(255, 255, 255);
+    transition: transform 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.header-menu .desk a:hover:after{
+     transform: scale(1);
+     transform-origin: left center;
+}
+/* Fade-in animation */
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-up {
+    animation: fadeUp 1.2s ease-out forwards;
+}
+
+/*  */
+@media screen and (max-width :1279px) {
+    h1 {
+        font-size: 76px;
+        line-height: normal;
+    }
+
+    h2 {
+        font-size: 40px;
+        line-height: normal;
+    }
+    h3{
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    h1 {
+        font-size: 56px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+       h3{
+        font-size: 28px;
+    }
+    h5 {
+    font-size: 20px;
+}
+}
