@@ -73,12 +73,13 @@ h2 {
     line-height: normal;
 }
 
-h3{
-   font-size: 40px;
-font-style: normal;
-font-weight: 400;
-line-height: normal; 
+h3 {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
+
 h5 {
     font-size: 24px;
     font-style: normal;
@@ -133,7 +134,8 @@ label {
     color: #fff;
     position: relative;
 }
-.header-menu .desk a:after{
+
+.header-menu .desk a:after {
     content: "";
     position: absolute;
     bottom: -4px;
@@ -147,10 +149,12 @@ label {
     background: rgb(255, 255, 255);
     transition: transform 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
-.header-menu .desk a:hover:after{
-     transform: scale(1);
-     transform-origin: left center;
+
+.header-menu .desk a:hover:after {
+    transform: scale(1);
+    transform-origin: left center;
 }
+
 /* Fade-in animation */
 @keyframes fadeUp {
     0% {
@@ -168,6 +172,13 @@ label {
     animation: fadeUp 1.2s ease-out forwards;
 }
 
+.footer-main h2 {
+    font-size: 88px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
 /*  */
 @media screen and (max-width :1279px) {
     h1 {
@@ -179,8 +190,13 @@ label {
         font-size: 40px;
         line-height: normal;
     }
-    h3{
+
+    h3 {
         font-size: 32px;
+    }
+
+    .footer-main h2 {
+        font-size: 62px;
     }
 }
 
@@ -192,10 +208,16 @@ label {
     h2 {
         font-size: 32px;
     }
-       h3{
+
+    h3 {
         font-size: 28px;
     }
+
     h5 {
-    font-size: 20px;
-}
+        font-size: 20px;
+    }
+
+    .footer-main h2 {
+        font-size: 40px;
+    }
 }
