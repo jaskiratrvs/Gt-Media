@@ -13,7 +13,7 @@
         .mobile-menu {
             max-height: 0;
             overflow: hidden;
-            transition: max-height 0.8s ease-out;
+            transition: max-height 0.6s ease-out;
         }
 
         .mobile-menu.active {
@@ -41,10 +41,13 @@
 
                 <!-- Mobile Menu Button -->
                 <button id="mobileMenuBtn" class="lg:hidden text-white p-2">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg class="w-8 h-8 ham"  fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M4 6h16M4 12h16M4 18h16"></path>
                     </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="cross" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <path d="M21.6785 20.1221C21.7807 20.2243 21.8618 20.3456 21.9171 20.4791C21.9724 20.6127 22.0009 20.7558 22.0009 20.9003C22.0009 21.0448 21.9724 21.188 21.9171 21.3215C21.8618 21.455 21.7807 21.5763 21.6785 21.6785C21.5763 21.7807 21.455 21.8618 21.3215 21.9171C21.188 21.9724 21.0448 22.0009 20.9003 22.0009C20.7558 22.0009 20.6127 21.9724 20.4791 21.9171C20.3456 21.8618 20.2243 21.7807 20.1221 21.6785L11.0005 12.5556L1.87883 21.6785C1.67243 21.8849 1.39249 22.0009 1.1006 22.0009C0.808699 22.0009 0.528759 21.8849 0.322357 21.6785C0.115955 21.4721 5.75397e-09 21.1922 0 20.9003C-5.75397e-09 20.6084 0.115955 20.3285 0.322357 20.1221L9.44535 11.0005L0.322357 1.87883C0.115955 1.67243 0 1.39249 0 1.1006C0 0.808699 0.115955 0.528759 0.322357 0.322357C0.528759 0.115955 0.808699 0 1.1006 0C1.39249 0 1.67243 0.115955 1.87883 0.322357L11.0005 9.44535L20.1221 0.322357C20.3285 0.115955 20.6084 -5.75397e-09 20.9003 0C21.1922 5.75397e-09 21.4721 0.115955 21.6785 0.322357C21.8849 0.528759 22.0009 0.808699 22.0009 1.1006C22.0009 1.39249 21.8849 1.67243 21.6785 1.87883L12.5556 11.0005L21.6785 20.1221Z" fill="white"/>
+                </svg>
                 </button>
             </div>
 
@@ -59,7 +62,7 @@
             </div>
         </nav>
     </header>
-
+<div class="relative">
     <!-- Hero Section with Video Background -->
     <section id="home" class="relative h-screen overflow-hidden text-white home-hero">
         <!-- Video Background -->
@@ -73,7 +76,7 @@
 
         <!-- Content -->
         <div class="relative z-10 container-r  h-full flex items-center justify-center text-center">
-            <div class="flex flex-col gap-4 lg:gap-6 items-center">
+            <div class="flex flex-col gap-4 lg:gap-6 items-center fade-up">
                 <h1 class="max-w-4xl">
                     Driving Business Intelligence Forward
                 </h1>
@@ -120,7 +123,8 @@
             </div>
         </div>
     </section>
-
+    </div>
+    
     <!-- Services Cards Section -->
     <section id="services" class="py-10 lg:py-16 xl:py-20 ">
         <div class="container-r ">
